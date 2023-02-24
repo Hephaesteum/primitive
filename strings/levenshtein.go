@@ -2,6 +2,10 @@ package strings
 
 // Levenshtein calculates the Levenshtein distance between two input strings a
 // and b and returns the distance as an integer.
+//
+// The Levenshtein distance algorithm measures the minimum number of
+// single-character edits (insertions, deletions, or substitutions) required to
+// transform one string into the other.
 func Levenshtein(a, b string) int {
 	la := len(a)
 	lb := len(b)
